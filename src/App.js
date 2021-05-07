@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+import { ImageEngineProvider, Image } from "@imageengine/react"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <a href="//inageengine.io">ImageEngine</a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ImageEngineProvider deliveryAddress="https://try.imgeng.in">
+        <Image src="/https://cdn.imageengine.io/images/phone-bg/bg-02.jpg"></Image>
+      </ImageEngineProvider>
       </header>
     </div>
   );
