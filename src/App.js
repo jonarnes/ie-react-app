@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>ImageEngine + React</p>
-        <ImageEngineProvider deliveryAddress="https://try.imgeng.in">
+        <ImageEngineProvider deliveryAddress="https://try.cdn.imgeng.in">
         <Image src="/https://imageengine.io/images/phone-bg/bg-02.jpg"></Image>
       </ImageEngineProvider>
       </header>
